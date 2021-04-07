@@ -1,0 +1,74 @@
+
+1.(a)
+Point(double,double)
+Point()
+Point(double,double)
+x1 = 10.0, y1 = 10.0
+x2 = 0.0, y2 = 0.0
+}
+}
+
+1.(b)
+call to this must be first statement in constructor
+
+생성자 호출이 생성자의 첫 번째 명령문이어야 합니다.
+
+2.(a)
+public double distance(Point other) {
+if (dim() != other.dim()) {
+System.out.println("Error!");
+return 0;
+}
+double sum=0;
+for(int i=0; i<dim() ;i++)
+
+{
+sum+=(vec[i]-other.vec[i])*(vec[i]-other.vec[i]);
+
+}
+return Math.sqrt(sum);
+}
+}
+
+2.(b)
+Point(double,double)
+Point()
+Point(double,double)
+distance = 50.0
+
+
+
+
+3.(a)
+
+x = This is MyObj
+y = This is SimpleObj
+
+
+3.(b)
+
+method does not override or implement a method from a supertype
+
+상위 오브젝트인 MyObj에 convertString이라는 Method가 없다.
+
+
+4.(a)
+
+Vector@15db9742
+inner product = 0.0
+
+
+
+4.(b)
+
+
+unreported exception Exception
+
+예외가 발생했는데 예외처리를 안했다.
+
+
+
+4.(c)
+Exception in thread "main" DimException,
+
+v1벡터와 v2벡터의 차원이 달라 내가 정의했던 dimention exception 예외가 발생하여 오류가 발생한다

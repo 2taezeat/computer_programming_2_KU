@@ -1,0 +1,65 @@
+1.(a)
+1
+2
+3
+
+1.(b)
+class java.lang.Integer
+1
+class java.lang.Integer
+2
+class java.lang.Integer
+3
+
+1.(c)
+[1, 2, 3]
+
+
+2.(a)
+[1, 2, 3, 4]
+[1, 2, 3, 4]
+
+2.(b)
+[1, 2, 3]
+[1, 2, 3, 4]
+
+2.(c)
+
+Test04는 a2에 a1의 주소값을 할당해 주었기에 a2에 영향이 있으면 동시에 같은 주소값을 a1에도
+영향을 준다. 그러므로 a2에 4를 넣게 되면 a1의 배열에도 4의 값이 들어간 것처럼 보이게 된다.
+
+Test05는 a2를 새롭게 정의하였기 때문에 새로운 주소값을 받게 된다. 그러므로 a2가 a1의 배열을
+받고 난 후에 a2에 4를 넣게 되어도 a1에는 영향을 끼치지 않는다.
+
+
+3.(a)
+
+
+Number / Comparable<Rational> / Comparator<Integer> / Integer / Integer
+
+
+3.(b)
+
+public class Rational extends Number implements Comparable<Rational> {
+private long numerator = 0;
+private long denominator = 1;
+public Rational() {
+this(0, 1);
+}
+public Rational(long numerator, long denominator) {
+long gcd = gcd(numerator, denominator);
+this.numerator = ((denominator > 0) ? 1 : -1
+
+
+
+3.(c)
+
+2 + 2/3 = 8/3
+2 - 2/3 = 4/3
+2 * 2/3 = 4/3
+2 / 2/3 = 3
+2/3 is 0.6666666666666666
+
+
+
+
